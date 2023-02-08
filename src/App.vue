@@ -1,11 +1,9 @@
 <script setup lang="ts">
-  import { useMessageStore } from './stores/message'
-  const { messageList } = useMessageStore()
+  import Modal from './components/Modal.vue'
 </script>
 
 <template>
-  <h1 class="text-2xl font-bold">Chat Modal App</h1>
-  <li v-for="message in messageList">
-    {{ message }}
-  </li>
+  <div class="w-3/6 h-3/6">
+    <Modal />
+  </div>
 </template>

@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { File, Text } from '../types/types'
 import messagesJson from '../mock/messages.json'
+import { getCurrentDateFormated } from '../utils/utils'
 
 const messages: Array<File | Text> = messagesJson
 
@@ -15,8 +16,14 @@ export const useMessageStore = defineStore('message', {
     }
   },
   actions: {
-    addMessage (message: File | Text) {
-      this.messageList.push(message)
+    addText (text: string) {
+      const newText: Text = {
+        // We can increment id like this because we never delete messages
+        id: this.messageList.length,
+        date: getCurrentDateFormated(),
+        body: text
+      }
+      this.messageList.push(newText)
     }
   }
 })
