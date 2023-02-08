@@ -4,7 +4,9 @@
 </script>
 
 <template>
-  <div v-for="message in messageList" class="">
-    {{ message }}
+  <div class="p-4">
+    <article v-for="message in messageList">
+      {{ message }}
+    </article>
   </div>
 </template>
