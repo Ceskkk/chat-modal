@@ -23,8 +23,8 @@ const handleClick = (e: Event) => {
     <MessageList />
     <footer class="border-gray-300 border-t-2 p-4">
       <form class="flex w-full gap-4" @submit="handleClick">
-        <input type="text" v-model="text" name="text" required placeholder="Write a message here"
-          class="bg-gray-200 border-gray-300 border-2 rounded-2xl py-1 px-4 w-full" />
+        <input autocomplete="off" type="text" v-model="text" name="text" required placeholder="Write a message here"
+          class="bg-gray-200 border-gray-300 border-2 rounded-2xl py-1 px-4 w-full focus:outline-blue-500" />
         <button
           class="flex justify-center items-center cursor-pointer rounded-full bg-blue-500 w-[36px] hover:shadow-sm hover:shadow-cyan-500 active:bg-blue-300">
           <img src="../assets/send-icon.svg" class="w-5">
