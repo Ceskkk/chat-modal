@@ -4,7 +4,7 @@ export interface Message {
   profileImage: string
 }
 
-export interface File extends Message {
+export interface FileMessage extends Message {
   version: number
   title: string
   fileType: string
@@ -12,6 +12,6 @@ export interface File extends Message {
   link: string
 }
 
-export interface Text extends Message {
+export interface TextMessage extends Message {
   body: string
 }
