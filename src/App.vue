@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import { useMessageStore } from './stores/message'
+  const messages = useMessageStore()
 </script>
 
 <template>
