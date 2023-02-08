@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import Modal from './components/Modal.vue'
+import Modal from './components/Modal.vue'
 </script>
 
 <template>
@@ -7,3 +7,6 @@
     <Modal />
   </div>
 </template>
+
+<!-- TODO: Abrir y cerrar modal -->
+<!-- TODO: Revisar responsive y UX -->

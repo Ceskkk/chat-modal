@@ -1,6 +1,7 @@
 export interface Message {
   id: number
   date: string
+  profileImage: string
 }
 
 export interface File extends Message {
