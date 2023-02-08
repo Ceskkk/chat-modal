@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { TextMessage } from '../types/types';
-const props = defineProps<{ message: TextMessage }>()
+import { FileMessage } from '../types/types';
+const props = defineProps<{ message: FileMessage }>()
 </script>
 
 <template>
-  {{ props.message }}
+  <div>
+    {{ props.message }}
+  </div>
 </template>

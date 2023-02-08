@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref, onUpdated } from 'vue'
+import { isText, isFile } from '../guards/guards';
 import { useMessageStore } from '../stores/message'
+import FileMessageComponent from './FileMessageComponent.vue';
 import TextMessageComponent from './TextMessageComponent.vue'
-import { TextMessage, FileMessage } from '../types/types'
 
 const { messageList } = useMessageStore()
 const list = ref()
@@ -10,10 +11,6 @@ const list = ref()
 onUpdated(() => {
   list.value.scrollTop = list.value.scrollHeight;
 })
-
-const isText = (props: TextMessage | FileMessage): props is TextMessage => {
-  return "body" in props;
-}
 
 </script>
 
@@ -23,8 +20,8 @@ const isText = (props: TextMessage | FileMessage): props is TextMessage => {
       <template v-if="isText(message)">
         <TextMessageComponent :message="message" />
       </template>
-      <template v-else>
-        Otro
+      <template v-if="isFile(message)">
+        <FileMessageComponent :message="message" />
       </template>
     </article>
   </div>
