@@ -20,21 +20,23 @@ const textParagraphStyle = isCurrentUser()
 <template>
   <article
     v-if="isFile(props.message)"
-    class="relative border-y-2 border-gray-200 py-4 px-4 mb-4 first:border-t-0 first:pt-0"
+    class="flex items-center gap-2 border-y-2 border-gray-200 py-4 px-4 mb-4 first:border-t-0 first:pt-0"
   >
-    <h2 class="text-md font-bold">VERSIÓN {{ props.message.version }}</h2>
-    <h3 class="text-md font-bold text-blue-500">{{ props.message.title }}</h3>
-    <h4 class="font-semibold">
-      Documento / {{ props.message.fileType }} (
-      {{ props.message.fileWeight }} MB) &nbsp;
-      {{ props.message.date }}
-    </h4>
-    <div>
+    <div class="flex flex-col w-full">
+      <h2 class="text-md font-bold">VERSIÓN {{ props.message.version }}</h2>
+      <h3 class="text-md font-bold text-blue-500">{{ props.message.title }}</h3>
+      <h4 class="font-semibold">
+        Documento / {{ props.message.fileType }} (
+        {{ props.message.fileWeight }} MB) &nbsp;
+        {{ props.message.date }}
+      </h4>
+    </div>
+    <div class="flex ml-auto">
       <a :href="props.message.link" target="_blank">
         <img
           src="../assets/cloud-download-icon.svg"
           alt="Cloud download icon"
-          class="absolute top-2/4 right-4 translate-y-[-50%] w-10"
+          class="w-10"
         />
       </a>
     </div>
