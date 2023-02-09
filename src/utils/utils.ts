@@ -1,6 +1,4 @@
 // Get current Date formated to string
-export const getCurrentDateFormated = (): string => {
-  return (
-    new Date().toJSON().slice(0, 10) + " / " + new Date().toJSON().slice(11, 16)
-  );
+export const formatDate = (date: Date): string => {
+  return date.toJSON().slice(0, 10) + " / " + date.toJSON().slice(11, 16);
 };
