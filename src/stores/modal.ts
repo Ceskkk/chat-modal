@@ -1,18 +1,18 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
 interface State {
-  isActive: boolean
+  isActive: boolean;
 }
 
-export const useModalStore = defineStore('modal', {
+export const useModalStore = defineStore("modal", {
   state: (): State => {
     return {
-      isActive: false
-    }
+      isActive: false,
+    };
   },
   actions: {
-    toggleModal () {
-      this.isActive = !this.isActive
-    }
-  }
-})
+    toggleModal() {
+      this.isActive = !this.isActive;
+    },
+  },
+});
