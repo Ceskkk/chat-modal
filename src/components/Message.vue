@@ -30,7 +30,7 @@ const textParagraphStyle = isCurrentUser()
       {{ props.message.date }}
     </h4>
     <div>
-      <a :href="props.message.link">
+      <a :href="props.message.link" target="_blank">
         <img
           src="../assets/cloud-download-icon.svg"
           alt="Cloud download icon"
