@@ -44,6 +44,4 @@ const { toggleModal } = modalStore;
 }
 </style>
 
-<!-- TODO: Poner bien el linter -->
 <!-- TODO: Testing componentes y funcionalidades -->
-<!-- TODO: README.md instrucciones inicialización -->

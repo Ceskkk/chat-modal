@@ -36,3 +36,14 @@ Dadas las indicaciones de la prueba técnica, se presupone lo siguiente:
 - No hace falta una base de datos para guardar las conversaciones, lo guardaremos en el estado de la aplicación.
 
 [Descargar instrucciones](/assets/prueba_desarrollo_frontend_isEazy.pdf)
+
+## Instrucciones de ejecución
+
+1. Clona el repositorio
+   ` git clone https://github.com/Ceskkk/chat-modal`
+2. Entra en el proyecto e instala las dependencias
+   `cd chat-modal`
+   `pnpm install`
+3. Ejecuta el servidor
+   `pnpm dev`
+4. ¡Listo! Ya tienes la aplicación funcionando
