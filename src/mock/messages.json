@@ -2,7 +2,6 @@
   {
     "id": 0,
     "date": "28 Dec 2018 / 14:43",
-    "profileImage": "",
     "version": 1,
     "title": "Título del archivo a subir 1.pdf",
     "fileType": "PDF",
@@ -12,21 +11,20 @@
   {
     "id": 1,
     "date": "28 Dec 2018 / 14:45",
-    "profileImage": "",
+    "profileImage": "./src/assets/user1.jpg",
     "body": "Buenas tardes, acabo de subir el primer archivo con el primer caso práctico, espero revisión.",
     "userId": 0
   },
   {
     "id": 2,
     "date": "28 Dec 2018 / 19:12",
-    "profileImage": "",
+    "profileImage": "./src/assets/user2.jpg",
     "body": "¡Gran trabajo Silvia! Pero creo que deberías revisar el punto 3. Intenta añadir un poco más de contexto y un apartado final de conclusiones personales.",
     "userId": 1
   },
   {
     "id": 3,
     "date": "28 Dec 2018 / 12:00",
-    "profileImage": "",
     "version": 2,
     "title": "Título del archivo a subir 2.pdf",
     "fileType": "PDF",
@@ -36,14 +34,14 @@
   {
     "id": 4,
     "date": "29 Dec 2018 / 12:01",
-    "profileImage": "",
+    "profileImage": "./src/assets/user1.jpg",
     "body": "Buenas tardes, acabo de subir el primer archivo con el primer caso práctico, espero revisión.",
     "userId": 0
   },
   {
     "id": 5,
     "date": "30 Dec 2018 / 15:23",
-    "profileImage": "",
+    "profileImage": "./src/assets/user2.jpg",
     "body": "Perfecto, excelente trabajo.",
     "userId": 1
   }
