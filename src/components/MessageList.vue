@@ -21,6 +21,7 @@ onUpdated(() => {
 
 <template>
   <div
+    id="message-list"
     ref="list"
     class="flex flex-col p-4 overflow-auto scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-gray-200"
   >
