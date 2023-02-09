@@ -14,4 +14,5 @@ export interface FileMessage extends Message {
 
 export interface TextMessage extends Message {
   body: string
+  userId: number
 }

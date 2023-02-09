@@ -22,7 +22,8 @@ export const useMessageStore = defineStore('message', {
         id: this.messageList.length,
         date: getCurrentDateFormated(),
         profileImage: '',
-        body: text
+        body: text,
+        userId: 0
       }
       this.messageList.push(newText)
     }
