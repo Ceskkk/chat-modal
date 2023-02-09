@@ -21,7 +21,7 @@
 </script>
 
 <template>
-  <div ref="list" class="flex flex-col p-4 overflow-auto max-h-80 scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-gray-200">
+  <div ref="list" class="flex flex-col p-4 overflow-auto scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-gray-200">
     <template v-for="message in messageList">
       <Message :message="message" />
     </template>

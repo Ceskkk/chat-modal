@@ -20,7 +20,7 @@ const handleClick = (e: Event) => {
       <img src="../assets/close-icon.svg" alt="Close icon" class="absolute right-4 top-2/4 w-8 translate-y-[-50%] cursor-pointer" />
     </header>
     <MessageList />
-    <footer class="border-gray-300 border-t-2 p-4">
+    <footer class="border-gray-300 border-t-2 p-4 mt-auto">
       <form class="flex w-full gap-4" @submit="handleClick">
         <input autocomplete="off" type="text" v-model="text" name="text" required placeholder="Write a message here"
           class="bg-gray-200 border-gray-300 border-2 rounded-2xl py-1 px-4 w-full focus:outline-blue-500" />
