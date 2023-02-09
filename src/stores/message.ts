@@ -21,7 +21,7 @@ export const useMessageStore = defineStore('message', {
         // We can increment id like this because we never delete messages
         id: this.messageList.length,
         date: getCurrentDateFormated(),
-        profileImage: '',
+        profileImage: './src/assets/user1.jpg',
         body: text,
         userId: 0
       }

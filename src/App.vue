@@ -9,7 +9,6 @@ import Modal from './components/Modal.vue'
   </div>
 </template>
 
-<!-- TODO: Styles messages  -->
 <!-- TODO: Abrir y cerrar modal -->
 <!-- TODO: Revisar responsive y UX -->
 <!-- TODO: Testing componentes y funcionalidades -->
