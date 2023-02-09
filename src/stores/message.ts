@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { FileMessage, TextMessage } from '../types/types'
-import messagesJson from '../mock/messages.json'
 import { getCurrentDateFormated } from '../utils/utils'
+import messagesJson from '../mock/messages.json'
 
 const messages: Array<FileMessage | TextMessage> = messagesJson
 

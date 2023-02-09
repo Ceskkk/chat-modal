@@ -17,7 +17,6 @@ const handleClick = (e: Event) => {
   <section id="modal" class="flex flex-col w-full h-full min-h-[inherit] border-black border-2 rounded-md">
     <header class="relative border-black border-b-2 p-4">
       <h1 class="text-2xl font-bold text-center">Chat</h1>
-      <!-- Using blue-600 -->
       <img src="../assets/close-icon.svg" class="absolute right-4 top-2/4 w-8 translate-y-[-50%] cursor-pointer" />
     </header>
     <MessageList />
