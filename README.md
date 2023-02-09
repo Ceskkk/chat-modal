@@ -40,7 +40,7 @@ Dadas las indicaciones de la prueba técnica, se presupone lo siguiente:
 ## Instrucciones de ejecución
 
 1. Clona el repositorio
-   ` git clone https://github.com/Ceskkk/chat-modal`
+   `git clone https://github.com/Ceskkk/chat-modal`
 2. Entra en el proyecto e instala las dependencias
    `cd chat-modal`
    `pnpm install`
